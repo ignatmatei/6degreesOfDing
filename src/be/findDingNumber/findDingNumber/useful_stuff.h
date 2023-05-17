@@ -10,4 +10,4 @@ struct Player {
 
 typedef struct Player PLayer;
 
-void parseData(FILE*, FILE*);
+int parseData(FILE*, FILE*);
