@@ -19,5 +19,5 @@ int parseData(FILE* finput, FILE* foutput) {
 	}
 	fclose(finput);
 	fclose(foutput);
-	return (i/3)*2;
+	return (i/3);
 }

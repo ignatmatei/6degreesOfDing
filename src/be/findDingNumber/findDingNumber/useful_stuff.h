@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-struct Player {
+struct playerInfo {
 	char* lname;
 	char* fname;
-	int id;
 };
-
-typedef struct Player PLayer;
-
+struct playerInfo playerInfo;
+struct hashElement
+{
+	playerInfo info;
+	struct hashElement* next;
+};
+typedef struct hashElement hashElement;
 int parseData(FILE*, FILE*);
